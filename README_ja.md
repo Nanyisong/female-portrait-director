@@ -41,6 +41,48 @@
 
 システムは固定済みパラメータ、コピーして使える完全なプロンプト、ネガティブ制約を返します。全入力項目は [parameter_schema.md](skill/parameter_schema.md)、使用例は [usage_examples.md](skill/usage_examples.md) を参照してください。
 
+## インストール
+
+リポジトリを Codex の skills ディレクトリにクローンします。
+
+Windows PowerShell：
+
+```powershell
+git clone https://github.com/liyue-aigc/female-portrait-director.git "$env:USERPROFILE\.codex\skills\female-portrait-director"
+```
+
+macOS または Linux：
+
+```bash
+git clone https://github.com/liyue-aigc/female-portrait-director.git "${CODEX_HOME:-$HOME/.codex}/skills/female-portrait-director"
+```
+
+新しい Codex 会話を開始し、次を呼び出します。
+
+```text
+$female-portrait-director
+```
+
+## 例：パラメータからディレクション付きプロンプトへ
+
+この Skill は入力を言い換えるだけではありません。明示された条件を保持し、不足している視覚要素を補完し、固定済みパラメータ、モジュール解析、完全なプロンプト、ネガティブ制約を出力します。
+
+```text
+スタイル：古風・仙侠テイストの人物画
+シーン：霧深い山水の中にある古風な庭園回廊
+服装：月白色の唐風幻想大袖衫 + 軽やかな披帛 + 銀刺繍の腰帯
+雰囲気：清冷、距離感、仙気
+顔立ち：古典的な東洋美人
+体型：細身で繊細な体型
+カメラ：軽い横向きの立ち姿、半身から太ももまで
+光：冷調の柔光
+フィルター：清冷で仙気のある古風フィルター
+アスペクト比：9:16
+用途：キャラクターポートレート
+```
+
+![古風仙侠プロンプト展開例](assets/examples/gufeng-director-output.jpg)
+
 ## 出力形式
 
 ```text
@@ -60,6 +102,7 @@
 ├── README_ko.md
 ├── SKILL.md
 ├── agents/openai.yaml
+├── assets/examples/
 ├── skill/
 │   ├── skill.md
 │   ├── public_instructions.md

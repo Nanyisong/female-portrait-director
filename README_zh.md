@@ -41,6 +41,48 @@
 
 系统将输出参数锁定结果、可直接复制的完整提示词和负面约束。完整调用字段参见 [parameter_schema.md](skill/parameter_schema.md)，示例参见 [usage_examples.md](skill/usage_examples.md)。
 
+## 安装方式
+
+将仓库克隆到 Codex 的 skills 目录。
+
+Windows PowerShell：
+
+```powershell
+git clone https://github.com/liyue-aigc/female-portrait-director.git "$env:USERPROFILE\.codex\skills\female-portrait-director"
+```
+
+macOS 或 Linux：
+
+```bash
+git clone https://github.com/liyue-aigc/female-portrait-director.git "${CODEX_HOME:-$HOME/.codex}/skills/female-portrait-director"
+```
+
+重新开始一个 Codex 对话，然后调用：
+
+```text
+$female-portrait-director
+```
+
+## 示例：从参数到导演式扩写
+
+这个 Skill 不只是复述用户输入。它会保留明确参数，补全缺失的视觉细节，并输出参数锁定结果、导演式模块解析、完整提示词和负面约束。
+
+```text
+写真风格：古风仙侠美人图
+场景方向：云雾山水间的古风庭院回廊
+服装方向：月白色唐风幻想大袖衫 + 轻盈披帛 + 银色刺绣腰封
+气质标签：清冷、疏离、仙气
+五官方向：古典东方美人脸
+身形方向：纤细清瘦身形
+镜头方向：轻侧身站姿，半身到大腿构图
+光线氛围：冷调柔光
+滤镜效果：清冷仙气古风滤镜
+画幅比例：9:16
+平台用途：角色写真
+```
+
+![古风仙侠参数扩写示例](assets/examples/gufeng-director-output.jpg)
+
 ## 输出格式
 
 ```text
@@ -60,6 +102,7 @@
 ├── README_ko.md
 ├── SKILL.md
 ├── agents/openai.yaml
+├── assets/examples/
 ├── skill/
 │   ├── skill.md
 │   ├── public_instructions.md

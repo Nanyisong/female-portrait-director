@@ -41,6 +41,48 @@ Aspect ratio: 9:16
 
 The system returns locked parameters, a complete copy-ready prompt, and negative constraints. See [parameter_schema.md](skill/parameter_schema.md) for the full input schema and [usage_examples.md](skill/usage_examples.md) for examples.
 
+## Installation
+
+Clone the repository into your Codex skills directory.
+
+Windows PowerShell:
+
+```powershell
+git clone https://github.com/liyue-aigc/female-portrait-director.git "$env:USERPROFILE\.codex\skills\female-portrait-director"
+```
+
+macOS or Linux:
+
+```bash
+git clone https://github.com/liyue-aigc/female-portrait-director.git "${CODEX_HOME:-$HOME/.codex}/skills/female-portrait-director"
+```
+
+Start a new Codex conversation, then invoke:
+
+```text
+$female-portrait-director
+```
+
+## Example: Parameters to Directed Prompt
+
+The Skill does more than restate the input. It preserves requested parameters, fills in missing visual details, and produces locked parameters, module analysis, a final prompt, and negative constraints.
+
+```text
+Portrait style: Gufeng xianxia beauty portrait
+Scene: Traditional courtyard corridor surrounded by misty mountains and water
+Outfit: Moon-white Tang-inspired fantasy wide-sleeve robe + flowing pibo scarf + silver embroidered waist sash
+Mood: Cool, distant, ethereal
+Facial direction: Classical East Asian beauty
+Body direction: Slender and delicate figure
+Camera direction: Slight side-facing standing pose, half-body to thigh framing
+Lighting: Cool soft light
+Filter: Cool ethereal gufeng filter
+Aspect ratio: 9:16
+Platform use: Character portrait
+```
+
+![Gufeng xianxia prompt expansion example](assets/examples/gufeng-director-output.jpg)
+
 ## Output Format
 
 ```text
@@ -60,6 +102,7 @@ The system returns locked parameters, a complete copy-ready prompt, and negative
 ├── README_ko.md
 ├── SKILL.md
 ├── agents/openai.yaml
+├── assets/examples/
 ├── skill/
 │   ├── skill.md
 │   ├── public_instructions.md

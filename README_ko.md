@@ -41,6 +41,48 @@
 
 시스템은 고정된 파라미터, 바로 복사하여 사용할 수 있는 완전한 프롬프트, 네거티브 제약을 반환합니다. 전체 입력 필드는 [parameter_schema.md](skill/parameter_schema.md), 사용 예시는 [usage_examples.md](skill/usage_examples.md)를 참고하세요.
 
+## 설치
+
+저장소를 Codex skills 디렉터리에 복제합니다.
+
+Windows PowerShell:
+
+```powershell
+git clone https://github.com/liyue-aigc/female-portrait-director.git "$env:USERPROFILE\.codex\skills\female-portrait-director"
+```
+
+macOS 또는 Linux:
+
+```bash
+git clone https://github.com/liyue-aigc/female-portrait-director.git "${CODEX_HOME:-$HOME/.codex}/skills/female-portrait-director"
+```
+
+새 Codex 대화를 시작한 뒤 다음을 호출합니다.
+
+```text
+$female-portrait-director
+```
+
+## 예시: 파라미터에서 디렉터 스타일 프롬프트까지
+
+이 Skill은 입력을 단순히 반복하지 않습니다. 명시된 조건을 유지하고 부족한 시각적 세부 사항을 보완하여 고정된 파라미터, 모듈 분석, 완전한 프롬프트, 네거티브 제약을 출력합니다.
+
+```text
+스타일: 고풍 선협 미인 이미지
+장면: 운무 산수 사이의 전통 정원 회랑
+의상: 월백색 당풍 판타지 넓은 소매 의상 + 가벼운 피보 스카프 + 은색 자수 허리띠
+분위기: 청량함, 거리감, 선협 분위기
+얼굴: 고전적인 동양 미인 얼굴
+체형: 가늘고 섬세한 체형
+카메라: 살짝 옆을 향한 서 있는 자세, 상반신부터 허벅지까지
+조명: 차가운 톤의 부드러운 빛
+필터: 청량하고 선협 분위기의 고풍 필터
+화면 비율: 9:16
+용도: 캐릭터 포트레이트
+```
+
+![고풍 선협 프롬프트 확장 예시](assets/examples/gufeng-director-output.jpg)
+
 ## 출력 형식
 
 ```text
@@ -60,6 +102,7 @@
 ├── README_ko.md
 ├── SKILL.md
 ├── agents/openai.yaml
+├── assets/examples/
 ├── skill/
 │   ├── skill.md
 │   ├── public_instructions.md
