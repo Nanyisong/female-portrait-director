@@ -1,0 +1,5 @@
+interface:
+  display_name: "女性人像提示词导演"
+  short_description: "生成稳定、合规、可复制的女性人像 AI 生图提示词"
+  default_prompt: "Use $female-portrait-director to generate a structured female portrait image prompt from my style, scene, outfit, and mood requirements."
+
