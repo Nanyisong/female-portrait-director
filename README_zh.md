@@ -43,7 +43,23 @@
 
 ## 安装方式
 
-将仓库克隆到 Codex 的 skills 目录。
+### 使用 npx 一键安装
+
+需要安装包含 `npx` 的 [Node.js](https://nodejs.org/)。执行以下命令，将 Skill 全局安装到 Codex：
+
+```bash
+npx skills@latest add liyue-aigc/female-portrait-director -g -a codex -y
+```
+
+后续更新已安装的 Skill：
+
+```bash
+npx skills@latest update female-portrait-director -g -y
+```
+
+### 使用 Git 手动安装
+
+也可以将仓库克隆到 Codex 的 skills 目录。
 
 Windows PowerShell：
 
@@ -57,7 +73,7 @@ macOS 或 Linux：
 git clone https://github.com/liyue-aigc/female-portrait-director.git "${CODEX_HOME:-$HOME/.codex}/skills/female-portrait-director"
 ```
 
-重新开始一个 Codex 对话，然后调用：
+重启 Codex 或重新开始一个对话，然后调用：
 
 ```text
 $female-portrait-director

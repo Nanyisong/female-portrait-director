@@ -43,7 +43,23 @@ The system returns locked parameters, a complete copy-ready prompt, and negative
 
 ## Installation
 
-Clone the repository into your Codex skills directory.
+### One-command install with npx
+
+Requires [Node.js](https://nodejs.org/) with `npx`. Install the Skill globally for Codex:
+
+```bash
+npx skills@latest add liyue-aigc/female-portrait-director -g -a codex -y
+```
+
+Update the installed Skill later:
+
+```bash
+npx skills@latest update female-portrait-director -g -y
+```
+
+### Manual install with Git
+
+Alternatively, clone the repository into your Codex skills directory.
 
 Windows PowerShell:
 
@@ -57,7 +73,7 @@ macOS or Linux:
 git clone https://github.com/liyue-aigc/female-portrait-director.git "${CODEX_HOME:-$HOME/.codex}/skills/female-portrait-director"
 ```
 
-Start a new Codex conversation, then invoke:
+Restart Codex or start a new conversation, then invoke:
 
 ```text
 $female-portrait-director

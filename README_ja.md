@@ -43,7 +43,23 @@
 
 ## インストール
 
-リポジトリを Codex の skills ディレクトリにクローンします。
+### npx によるワンコマンドインストール
+
+`npx` を含む [Node.js](https://nodejs.org/) が必要です。Skill を Codex にグローバルインストールします。
+
+```bash
+npx skills@latest add liyue-aigc/female-portrait-director -g -a codex -y
+```
+
+インストール済み Skill を後から更新する場合：
+
+```bash
+npx skills@latest update female-portrait-director -g -y
+```
+
+### Git による手動インストール
+
+別の方法として、リポジトリを Codex の skills ディレクトリにクローンできます。
 
 Windows PowerShell：
 
@@ -57,7 +73,7 @@ macOS または Linux：
 git clone https://github.com/liyue-aigc/female-portrait-director.git "${CODEX_HOME:-$HOME/.codex}/skills/female-portrait-director"
 ```
 
-新しい Codex 会話を開始し、次を呼び出します。
+Codex を再起動するか、新しい会話を開始してから次を呼び出します。
 
 ```text
 $female-portrait-director
