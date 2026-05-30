@@ -1,5 +1,18 @@
 # Changelog
 
+## FEMALE-PORTRAIT-DIRECTOR-V1.3
+
+Full visual-module expansion release.
+
+Added and improved modules:
+
+- Restored visible default age cues for fictional 24–28-year-old adult women
+- Made the visual completion library mandatory for standard and director-detail outputs
+- Required detailed expansion for face, body, pose, outfit, scene, camera, lighting, and filter modules
+- Added executable filter controls for color temperature, saturation, contrast, highlights, shadows, skin texture, grain, and clarity
+- Kept photography direction as a fusion layer instead of using it as a short summary
+- Rewritten all five examples to demonstrate complete module expansion
+
 ## FEMALE-PORTRAIT-DIRECTOR-V1.2
 
 Director workflow and progressive-loading release.

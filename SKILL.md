@@ -17,14 +17,14 @@ Turn a small set of portrait parameters into a stable, visually directed, copy-r
    - [urban fashion](skill/routes/urban-fashion.md)
    - [gufeng fantasy](skill/routes/gufeng-fantasy.md)
    - [e-commerce try-on](skill/routes/ecommerce-tryon.md)
-4. Read [skill/references/director-expansion.md](skill/references/director-expansion.md) when writing or rewriting a prompt.
-5. Read [skill/references/visual-libraries.md](skill/references/visual-libraries.md) only when a missing face, pose, lighting, or filter field needs completion.
+4. Read [skill/references/visual-libraries.md](skill/references/visual-libraries.md) for every standard or director-detail output. Complete every visual module before writing the final prompt.
+5. Read [skill/references/director-expansion.md](skill/references/director-expansion.md) when writing or rewriting a prompt. Use direction as a fusion layer, never as a replacement for detailed module expansion.
 6. Read [skill/parameter_schema.md](skill/parameter_schema.md) when a field name, alias, output mode, or default requires clarification.
 
 ## Operating rules
 
 - Lock explicit user parameters. Expand them without silently replacing them.
-- Do not mechanically fill a template. Create one coherent photographed moment.
+- Do not mechanically fill a template or return a summary. Fully expand the subject and create one coherent photographed moment.
 - Use a style route as direction, not as a fixed sentence bank.
 - Select details sparingly. Every added detail must support the same image.
 - Default to fictional, clearly adult subjects and non-explicit framing.
