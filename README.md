@@ -1,57 +1,63 @@
-# 女性人像提示词导演 Skill
+[English](README.md) | [简体中文](README_zh.md) | [日本語](README_ja.md) | [한국어](README_ko.md)
 
-女性人像提示词导演 Skill 是一个面向 AI 生图场景的结构化女性人像提示词生成系统，支持清纯生活照、纯欲曲线生活照、都市时尚写真、古风仙侠美人图、电商服装模特图等多种风格。系统内置参数锁定、风格路由、五官模块、身形模块、镜头光线补全和负面约束优化机制，帮助用户用简单参数生成稳定、合规、可复制的 AI 图像提示词。
+# Female Portrait Prompt Director Skill
 
-本项目不是普通提示词合集，而是一个可扩展的女性人像提示词 Skill 框架。
+Female Portrait Prompt Director Skill is a structured prompt-generation system for AI image creation. It supports clean lifestyle portraits, restrained curve-focused lifestyle portraits, urban fashion photography, gufeng fantasy portraits, and e-commerce clothing model images. The system includes parameter locking, style routing, facial-feature modules, body-shape modules, camera and lighting completion, and negative-constraint optimization to help users generate stable, compliant, and reusable AI image prompts from simple inputs.
 
-## 项目定位
+This project is not a generic prompt collection. It is an extensible female portrait prompt Skill framework.
 
-通过少量输入参数生成完整提示词，并在保留用户明确要求的前提下自动补全五官、身形、镜头、光线、滤镜、平台用途和负面约束。默认人物必须是明确成年的女性，输出强调真实摄影质感、克制表达和稳定生成。
+## Project Scope
 
-## 支持风格
+Generate complete prompts from a small set of input parameters. Preserve the user's explicit requirements while completing facial features, body shape, camera direction, lighting, filters, platform purpose, and negative constraints. Subjects must be clearly adult women. Outputs emphasize realistic photography, restrained expression, and stable generation.
 
-- 清纯生活照
-- 纯欲曲线生活照
-- 都市时尚写真
-- 古风仙侠美人图
-- 电商服装模特图
+## Supported Styles
 
-## 核心能力
+- Clean lifestyle portraits
+- Restrained curve-focused lifestyle portraits
+- Urban fashion photography
+- Gufeng fantasy portraits
+- E-commerce clothing model images
 
-- 锁定用户已经填写的参数，只做细化和稳定化补全。
-- 根据目标风格调用对应母版，避免互相冲突的风格词堆叠。
-- 自动补全五官差异化、身形、镜头、光线、滤镜和负面约束。
-- 支持提示词生成、已有提示词优化、失败诊断、参数组合推荐和审查友好改写。
-- 为电商图片保留服装展示优先级，为曲线风格保留明确的安全边界。
+## Core Capabilities
 
-## 快速开始
+- Lock user-specified parameters and only refine or stabilize them.
+- Route each request through the appropriate style template and avoid conflicting style keywords.
+- Complete facial differentiation, body shape, camera, lighting, filters, and negative constraints automatically.
+- Support prompt generation, prompt optimization, failure diagnosis, parameter recommendations, and review-friendly rewrites.
+- Preserve clothing-display priority for e-commerce images and explicit safety boundaries for curve-focused portraits.
 
-将仓库作为 Codex Skill 使用时，可直接调用 `$female-portrait-director`。最简输入示例：
+## Quick Start
 
-```text
-风格：清纯生活照
-场景：咖啡馆靠窗座位
-服装：白色针织开衫 + 浅色内搭
-气质：清纯温柔
-画幅：9:16
-```
-
-系统将输出参数锁定结果、可直接复制的完整提示词和负面约束。完整调用字段参见 [parameter_schema.md](skill/parameter_schema.md)，示例参见 [usage_examples.md](skill/usage_examples.md)。
-
-## 输出格式
+When using this repository as a Codex Skill, invoke `$female-portrait-director`. Minimal example:
 
 ```text
-一、参数锁定结果
-二、风格判断
-三、最终提示词
-四、负面约束
-五、可选优化建议
+Style: clean lifestyle portrait
+Scene: window seat in a cafe
+Outfit: white knitted cardigan + light-colored inner layer
+Mood: clean and gentle
+Aspect ratio: 9:16
 ```
 
-## 文件结构
+The system returns locked parameters, a complete copy-ready prompt, and negative constraints. See [parameter_schema.md](skill/parameter_schema.md) for the full input schema and [usage_examples.md](skill/usage_examples.md) for examples.
+
+## Output Format
+
+```text
+1. Locked parameters
+2. Style decision
+3. Final prompt
+4. Negative constraints
+5. Optional optimization suggestions
+```
+
+## Repository Structure
 
 ```text
 .
+├── README.md
+├── README_zh.md
+├── README_ja.md
+├── README_ko.md
 ├── SKILL.md
 ├── agents/openai.yaml
 ├── skill/
@@ -67,16 +73,16 @@
 └── examples/
 ```
 
-## 安全边界
+## Safety Boundaries
 
-本项目仅用于虚构、成年、非裸露、非伤害性的视觉提示词生成。禁止用于未成年人性化、色情裸露、非自愿图像、欺骗性身份内容、骚扰、诽谤、隐私侵犯或其他违法违规用途。详细规则参见 [prompt_safety.md](docs/prompt_safety.md) 和 [DISCLAIMER.md](DISCLAIMER.md)。
+This project is intended only for fictional, adult, non-explicit, and non-harmful visual prompt generation. It must not be used for sexualized minors, explicit nudity, non-consensual images, deceptive identity content, harassment, defamation, privacy violations, or other unlawful purposes. See [prompt_safety.md](docs/prompt_safety.md) and [DISCLAIMER.md](DISCLAIMER.md) for details.
 
 ## License
 
-本项目使用 [MIT License](LICENSE)。MIT License 允许使用、复制、修改、合并、发布、分发、再许可和销售副本。安全边界属于合理使用说明，不改变 MIT License 的标准授权范围。
+This project is licensed under the [MIT License](LICENSE). The MIT License permits use, copying, modification, merging, publishing, distribution, sublicensing, and selling copies. The safety boundaries are responsible-use guidelines and do not alter the standard MIT License terms.
 
-## 作者与版本
+## Author and Version
 
-- 作者：李岳
-- 版本：`FEMALE-PORTRAIT-DIRECTOR-V1.0`
-- 项目：`Female Portrait Prompt Director Skill`
+- Author: Li Yue (李岳)
+- Version: `FEMALE-PORTRAIT-DIRECTOR-V1.0`
+- Project: `Female Portrait Prompt Director Skill`
