@@ -1,6 +1,6 @@
 # 女性人像提示词导演 Skill｜导演式推导与扩写规则
 
-版本编号：`FEMALE-PORTRAIT-DIRECTOR-V2.0-MODULAR`
+版本编号：`FEMALE-PORTRAIT-DIRECTOR-V1.4`
 文档类型：公共导演融合规则
 适用范围：所有 routes、overlays、tools 中涉及提示词生成、提示词优化、图片反推提示词、参数组合扩写的任务
 依赖文件：

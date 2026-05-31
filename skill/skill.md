@@ -1,6 +1,6 @@
 # 女性人像提示词导演 Skill｜轻量核心流程
 
-版本编号：`FEMALE-PORTRAIT-DIRECTOR-V2.0-MODULAR`
+版本编号：`FEMALE-PORTRAIT-DIRECTOR-V1.4`
 
 ## 1. 目标
 

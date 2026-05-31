@@ -2,7 +2,7 @@
 
 # Female Portrait Prompt Director Skill
 
-Female Portrait Prompt Director Skill is a structured prompt-generation and visual-direction system for AI image creation. V2.0-MODULAR routes each request through a single on-demand style file, locks explicit parameters, expands visual modules, and fuses them into a coherent photographed moment.
+Female Portrait Prompt Director Skill is a structured prompt-generation and visual-direction system for AI image creation. V1.4 routes each request through a single on-demand style file, locks explicit parameters, expands visual modules, and fuses them into a coherent photographed moment.
 
 This project is not a generic prompt collection. It is an extensible female portrait prompt Skill framework.
 
@@ -164,5 +164,5 @@ This project is licensed under the [MIT License](LICENSE). The MIT License permi
 ## Author and Version
 
 - Author: Li Yue (李岳)
-- Version: `FEMALE-PORTRAIT-DIRECTOR-V2.0-MODULAR`
+- Version: `FEMALE-PORTRAIT-DIRECTOR-V1.4`
 - Project: `Female Portrait Prompt Director Skill`

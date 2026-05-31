@@ -3,10 +3,10 @@
 当前公开版本：
 
 ```text
-FEMALE-PORTRAIT-DIRECTOR-V2.0-MODULAR
+FEMALE-PORTRAIT-DIRECTOR-V1.4
 ```
 
-## V2.0-MODULAR 变更摘要
+## V1.4 变更摘要
 
 - 使用 `skill/style-registry.md` 作为唯一风格分流入口。
 - 将底层规则拆分到 `skill/core/`，统一参数锁定、安全边界、输出格式、冲突处理和缺失参数补全。

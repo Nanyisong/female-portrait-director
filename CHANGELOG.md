@@ -1,6 +1,6 @@
 # Changelog
 
-## FEMALE-PORTRAIT-DIRECTOR-V2.0-MODULAR
+## FEMALE-PORTRAIT-DIRECTOR-V1.4
 
 Registry-driven modular routing release.
 

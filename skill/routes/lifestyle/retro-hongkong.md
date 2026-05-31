@@ -2,7 +2,7 @@
 
 # 女性人像提示词导演 Skill｜复古港风写真 Route
 
-版本编号：`FEMALE-PORTRAIT-DIRECTOR-V2.0-MODULAR`
+版本编号：`FEMALE-PORTRAIT-DIRECTOR-V1.4`
 文档类型：风格路由母版
 所属分类：`routes/lifestyle/`
 route_id：`retro-hongkong`

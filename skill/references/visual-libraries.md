@@ -2,7 +2,7 @@
 
 # 女性人像提示词导演 Skill｜公共视觉扩写库
 
-版本编号：`FEMALE-PORTRAIT-DIRECTOR-V2.0-MODULAR`
+版本编号：`FEMALE-PORTRAIT-DIRECTOR-V1.4`
 文档类型：公共视觉词库 / 公共扩写素材库
 适用范围：所有 routes、overlays、tools、examples、tests 中涉及女性人像提示词生成、参数组合推荐、提示词优化、审查友好改写、图片反推提示词的任务
 核心职责：为不同风格 route 提供统一、可复用、可扩展的视觉扩写词库，避免提示词机械、空泛、同质化

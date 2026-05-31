@@ -2,7 +2,7 @@
 
 # 女性人像提示词导演 Skill｜输出格式规则
 
-版本编号：`FEMALE-PORTRAIT-DIRECTOR-V2.0-MODULAR`
+版本编号：`FEMALE-PORTRAIT-DIRECTOR-V1.4`
 文档类型：核心规则文档
 适用范围：提示词生成、参数组合推荐、提示词优化、失败诊断、审查友好改写、图片反推提示词、Skill 文档输出
 核心职责：统一所有输出格式，确保输出内容可复制、可执行、结构稳定、不混乱
@@ -914,14 +914,14 @@ GPT Image 2 审查友好
 ```text
 1. 一次只输出一个核心文档；
 2. 不得只写摘要；
-3. 不得和已经确定的 V2.0-MODULAR 规则冲突；
+3. 不得和已经确定的 V1.4 规则冲突；
 4. 不得擅自改变目录结构；
 5. 不得把 route 具体母版写进 style-registry；
 6. 不得把所有风格堆进 skill.md；
 7. 不得把安全边界写得比 safety-boundary.md 更弱；
 8. 不得删减参数锁定规则；
 9. 不得出现 V2.0 / V2.1 作为当前主线版本；
-10. 当前统一使用 FEMALE-PORTRAIT-DIRECTOR-V2.0-MODULAR。
+10. 当前统一使用 FEMALE-PORTRAIT-DIRECTOR-V1.4。
 ```
 
 ---
@@ -1083,7 +1083,7 @@ skill/references/visual-libraries.md
 
 ```text
 1. 版本号写成 V2.0；
-2. 把 V2.0-MODULAR 拆成多个主线版本；
+2. 把 V1.4 拆成多个主线版本；
 3. 删除核心 5 个风格；
 4. 删除新增 9 个重点风格；
 5. 弱化成年边界；
@@ -1110,7 +1110,7 @@ skill/references/visual-libraries.md
 7. 是否正向提示词与负面约束分离？
 8. 是否输出了可直接复制内容？
 9. 是否避免了摘要化？
-10. 是否与 V2.0-MODULAR 已确定结构一致？
+10. 是否与 V1.4 已确定结构一致？
 ```
 
 如果任意一项不合格，必须修正后再输出。
