@@ -142,7 +142,7 @@
 处理方式：
 
 ```text
-调用 skill/tools/parameter-recommendation.md；
+调用 skill/tools/parameter-recommend.md；
 根据目标风格输出可直接调用的参数组合；
 每组必须包含风格、场景、服装、气质、五官、身形、镜头、光线、滤镜、画幅和推荐理由。
 ```
@@ -235,7 +235,7 @@ GPT Image 2 审查
 处理方式：
 
 ```text
-调用 skill/tools/review-safe-rewrite.md；
+调用 skill/tools/safety-rewrite.md；
 保留原风格、场景、服装、镜头、光线和气质；
 将高风险词改写为成年、时尚、服装完整的安全表达。
 ```
@@ -415,8 +415,8 @@ skill/core/parameter-lock.md
 ```text
 优化提示词 → skill/tools/prompt-optimize.md
 失败诊断 → skill/tools/failure-diagnosis.md
-参数组合推荐 → skill/tools/parameter-recommendation.md
-审查友好改写 → skill/tools/review-safe-rewrite.md
+参数组合推荐 → skill/tools/parameter-recommend.md
+审查友好改写 → skill/tools/safety-rewrite.md
 图片反推提示词 → skill/tools/image-to-prompt.md
 ```
 
@@ -753,9 +753,9 @@ skill/overlays/cold-heroine.md
 skill/overlays/bright-heroine.md
 skill/overlays/intellectual.md
 skill/overlays/gentle-sister.md
-skill/overlays/cool-senior.md
+skill/overlays/cool-mature.md
 skill/overlays/sweet-cool.md
-skill/overlays/mature-elegant.md
+skill/overlays/mature-urban.md
 ```
 
 ---

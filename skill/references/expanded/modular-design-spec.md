@@ -216,16 +216,16 @@ skill/
 │   ├── cold-heroine.md
 │   ├── bright-heroine.md
 │   ├── intellectual.md
-│   ├── mature-elegant.md
+│   ├── mature-urban.md
 │   ├── sweet-cool.md
 │   ├── gentle-sister.md
-│   └── cool-senior.md
+│   └── cool-mature.md
 │
 ├── tools/
 │   ├── prompt-optimize.md
 │   ├── failure-diagnosis.md
-│   ├── parameter-recommendation.md
-│   ├── review-safe-rewrite.md
+│   ├── parameter-recommend.md
+│   ├── safety-rewrite.md
 │   └── image-to-prompt.md
 │
 ├── examples/

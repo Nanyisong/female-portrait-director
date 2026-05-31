@@ -10,18 +10,23 @@ Turn a small set of portrait parameters into a stable, visually directed, copy-r
 ## Required loading order
 
 1. Read [skill/skill.md](skill/skill.md) for the canonical workflow.
-2. Read [skill/style-registry.md](skill/style-registry.md). Select exactly one implemented primary route. Do not invent a placeholder extension route.
-3. Read only the selected file under `skill/routes/`.
-4. Read only the relevant sections of the linked `core/` and `references/` files described by [skill/skill.md](skill/skill.md).
+2. For optimization, diagnosis, parameter recommendation, safety rewrite, or image-to-prompt tasks, read [skill/tool-registry.md](skill/tool-registry.md) and only the selected file under `skill/tools/`.
+3. Read [skill/style-registry.md](skill/style-registry.md). Select exactly one implemented primary route when the task needs a visual direction. Do not invent a placeholder extension route.
+4. Read only the selected file under `skill/routes/`.
+5. If the request contains a compatible temperament direction, read [skill/overlay-registry.md](skill/overlay-registry.md) and only the selected file under `skill/overlays/`.
+6. Read [skill/core/director-gate.md](skill/core/director-gate.md). Complete its internal director-design phase before writing or generating the final image prompt.
+7. Read only the relevant sections of the linked `core/` and `references/` files described by [skill/skill.md](skill/skill.md).
 
 ## Operating rules
 
-- Lock explicit user parameters. Expand them without silently replacing them.
-- Use the registry as the only routing entry point. Load one primary route and optional compatible overlays only when their files exist.
-- Complete age cues, facial features, expression, body direction, pose, clothing, scene, camera, lighting, filter, and platform adaptation before composing the final prompt.
+- Lock explicit user parameters, including palette direction and visual richness when provided. Expand them without silently replacing them.
+- Use the registries as the only routing entry points. Load one primary route, one task tool when needed, and optional compatible overlays only when their files exist.
+- Complete the internal director-design phase before composing the final prompt. Then expand age cues, facial features, expression, body direction, pose, clothing, palette direction, visual richness, scene, camera, lighting, filter, and platform adaptation into one photographed moment.
 - Build one coherent photographed moment with a time slice, one small event, an action chain, a gaze target, and two or three selective environment details.
 - Use route templates as visual direction, not as sentence banks. Do not return a summary or mechanically fill fields.
-- Default to fictional, clearly adult subjects. Keep sensual or curve-focused requests non-explicit, clothed, and restrained.
+- Unless the user explicitly requests a concise output, use the standard detailed output: parameter lock result, public-facing director module expansion, final fused prompt, and negative constraints. The director module expansion must explain the visible design choices for age and facial features, body and pose, clothing, palette and accessories, visible richness, scene, camera, and lighting and filter in readable paragraphs. Do not reduce it to a short field recap.
+- Keep private chain-of-thought internal. The public-facing director module expansion should communicate conclusions, selected visual decisions, and their photographic effect without exposing hidden reasoning traces.
+- Default to fictional, clearly adult subjects. Adult sensual or curve-focused portrait requests may preserve visual attraction, but must avoid exposed nipples, exposed genitals, explicit sexual acts, and any minor or ambiguous-age framing.
 - If the user requests `只要最终提示词`, output only the final prompt and negative constraints.
 - If the user requests direct image generation, prepare the directed prompt internally and route it to the available image-generation capability.
 
