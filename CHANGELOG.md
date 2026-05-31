@@ -1,5 +1,18 @@
 # Changelog
 
+## FEMALE-PORTRAIT-DIRECTOR-V2.0-MODULAR
+
+Registry-driven modular routing release.
+
+Added and improved modules:
+
+- Added `skill/style-registry.md` as the single style-routing entry point
+- Split shared rules into parameter locking, safety boundaries, output formatting, conflict resolution, and fallback modules
+- Grouped routes into lifestyle, fashion, oriental, fantasy, commercial, and curve categories
+- Expanded the implemented style set from 5 to 14 routes
+- Added registry placeholders for future extensions without pretending that unfinished route files exist
+- Preserved director-style visual reasoning before prompt composition instead of summary output or mechanical field filling
+
 ## FEMALE-PORTRAIT-DIRECTOR-V1.3
 
 Full visual-module expansion release.

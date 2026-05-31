@@ -2,7 +2,7 @@
 
 # 女性人像提示词导演 Skill
 
-女性人像提示词导演 Skill 是一个面向 AI 生图场景的结构化女性人像提示词生成与视觉导演系统，支持清纯生活照、纯欲曲线生活照、都市时尚写真、古风仙侠美人图、电商服装模特图等多种风格。V1.3 会锁定明确参数，完整扩写年龄特征、五官、身形、姿态、服装、场景、镜头、光线和滤镜，再将这些模块融合为同一个自然摄影瞬间。
+女性人像提示词导演 Skill 是一个面向 AI 生图场景的结构化女性人像提示词生成与视觉导演系统。V2.0-MODULAR 会通过唯一风格注册表按需加载单一路由，锁定明确参数，完成视觉推导，再将年龄特征、五官、身形、姿态、服装、场景、镜头、光线和滤镜融合为同一个自然摄影瞬间。
 
 本项目不是普通提示词合集，而是一个可扩展的女性人像提示词 Skill 框架。
 
@@ -17,6 +17,15 @@
 - 都市时尚写真
 - 古风仙侠美人图
 - 电商服装模特图
+- 复古港风写真
+- 法式慵懒写真
+- 新中式东方写真
+- 活力运动写真
+- 旅行假日写真
+- 影楼精修写真
+- 东方丰腴写真
+- 清冷仙气古风增强版
+- 明媚华贵古风增强版
 
 ## 核心能力
 
@@ -121,13 +130,21 @@ $female-portrait-director
 ├── assets/examples/
 ├── skill/
 │   ├── skill.md
+│   ├── style-registry.md
 │   ├── public_instructions.md
 │   ├── parameter_schema.md
 │   ├── usage_examples.md
+│   ├── core/
 │   ├── references/
 │   │   ├── director-expansion.md
 │   │   └── visual-libraries.md
 │   └── routes/
+│       ├── commercial/
+│       ├── curve/
+│       ├── fantasy/
+│       ├── fashion/
+│       ├── lifestyle/
+│       └── oriental/
 ├── docs/
 │   ├── style_guide.md
 │   ├── prompt_safety.md
@@ -147,5 +164,5 @@ $female-portrait-director
 ## 作者与版本
 
 - 作者：李岳
-- 版本：`FEMALE-PORTRAIT-DIRECTOR-V1.3`
+- 版本：`FEMALE-PORTRAIT-DIRECTOR-V2.0-MODULAR`
 - 项目：`Female Portrait Prompt Director Skill`

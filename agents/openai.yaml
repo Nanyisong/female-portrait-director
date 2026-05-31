@@ -1,4 +1,4 @@
 interface:
   display_name: "女性人像提示词导演"
-  short_description: "完整扩写人像细节并融合为摄影导演式 AI 生图提示词"
-  default_prompt: "Use $female-portrait-director to fully expand my portrait parameters and fuse the detailed modules into a photography-directed AI image prompt."
+  short_description: "按需路由不同人像风格，思考并扩写为完整摄影导演式提示词"
+  default_prompt: "Use $female-portrait-director to route my portrait style, preserve explicit parameters, fully expand the visual modules, and fuse them into a photography-directed AI image prompt."

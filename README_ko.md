@@ -2,7 +2,7 @@
 
 # 여성 인물 프롬프트 디렉터 Skill
 
-여성 인물 프롬프트 디렉터 Skill은 AI 이미지 생성을 위한 구조화된 프롬프트 생성 및 시각 디렉션 시스템입니다. V1.3은 명시된 파라미터를 고정하고 연령 특징, 얼굴, 체형, 포즈, 의상, 장면, 카메라, 조명과 필터를 구체적으로 확장한 뒤 하나의 자연스러운 촬영 순간으로 통합합니다.
+여성 인물 프롬프트 디렉터 Skill은 AI 이미지 생성을 위한 구조화된 프롬프트 생성 및 시각 디렉션 시스템입니다. V2.0-MODULAR은 단일 스타일 레지스트리에서 필요한 라우트만 불러오고, 명시된 파라미터를 고정하여 하나의 자연스러운 촬영 순간으로 통합합니다.
 
 이 프로젝트는 단순한 프롬프트 모음이 아니라 확장 가능한 여성 인물 프롬프트 Skill 프레임워크입니다.
 
@@ -17,6 +17,15 @@
 - 도시 패션 화보
 - 고풍 선협 인물 이미지
 - 전자상거래 의류 모델 이미지
+- 레트로 홍콩풍 인물 이미지
+- 프렌치 릴랙스 인물 이미지
+- 신중식 동양 미학 인물 이미지
+- 활력 스포츠 인물 이미지
+- 여행 휴가 인물 이미지
+- 스튜디오 리터칭 인물 이미지
+- 동양적 풍윤미 인물 이미지
+- 청량한 선협 강화 인물 이미지
+- 화려한 고풍 강화 인물 이미지
 
 ## 핵심 기능
 
@@ -121,13 +130,21 @@ $female-portrait-director
 ├── assets/examples/
 ├── skill/
 │   ├── skill.md
+│   ├── style-registry.md
 │   ├── public_instructions.md
 │   ├── parameter_schema.md
 │   ├── usage_examples.md
+│   ├── core/
 │   ├── references/
 │   │   ├── director-expansion.md
 │   │   └── visual-libraries.md
 │   └── routes/
+│       ├── commercial/
+│       ├── curve/
+│       ├── fantasy/
+│       ├── fashion/
+│       ├── lifestyle/
+│       └── oriental/
 ├── docs/
 │   ├── style_guide.md
 │   ├── prompt_safety.md
@@ -147,5 +164,5 @@ $female-portrait-director
 ## 작성자 및 버전
 
 - 작성자: Li Yue (李岳)
-- 버전: `FEMALE-PORTRAIT-DIRECTOR-V1.3`
+- 버전: `FEMALE-PORTRAIT-DIRECTOR-V2.0-MODULAR`
 - 프로젝트: `Female Portrait Prompt Director Skill`

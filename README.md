@@ -2,7 +2,7 @@
 
 # Female Portrait Prompt Director Skill
 
-Female Portrait Prompt Director Skill is a structured prompt-generation and visual-direction system for AI image creation. It supports clean lifestyle portraits, restrained curve-focused lifestyle portraits, urban fashion photography, gufeng fantasy portraits, and e-commerce clothing model images. V1.3 locks explicit parameters, fully expands age cues, facial features, body, pose, outfit, scene, camera, lighting, and filter controls, then fuses them into a coherent photographed moment.
+Female Portrait Prompt Director Skill is a structured prompt-generation and visual-direction system for AI image creation. V2.0-MODULAR routes each request through a single on-demand style file, locks explicit parameters, expands visual modules, and fuses them into a coherent photographed moment.
 
 This project is not a generic prompt collection. It is an extensible female portrait prompt Skill framework.
 
@@ -17,6 +17,15 @@ Generate complete prompts from a small set of input parameters. Preserve the use
 - Urban fashion photography
 - Gufeng fantasy portraits
 - E-commerce clothing model images
+- Retro Hong Kong portraits
+- French relaxed portraits
+- New Chinese oriental portraits
+- Sporty active portraits
+- Travel vacation portraits
+- Studio-retouched portraits
+- Oriental voluptuous portraits
+- Cold xianxia enhanced portraits
+- Bright luxury gufeng portraits
 
 ## Core Capabilities
 
@@ -121,13 +130,21 @@ Platform use: Character portrait
 ├── assets/examples/
 ├── skill/
 │   ├── skill.md
+│   ├── style-registry.md
 │   ├── public_instructions.md
 │   ├── parameter_schema.md
 │   ├── usage_examples.md
+│   ├── core/
 │   ├── references/
 │   │   ├── director-expansion.md
 │   │   └── visual-libraries.md
 │   └── routes/
+│       ├── commercial/
+│       ├── curve/
+│       ├── fantasy/
+│       ├── fashion/
+│       ├── lifestyle/
+│       └── oriental/
 ├── docs/
 │   ├── style_guide.md
 │   ├── prompt_safety.md
@@ -147,5 +164,5 @@ This project is licensed under the [MIT License](LICENSE). The MIT License permi
 ## Author and Version
 
 - Author: Li Yue (李岳)
-- Version: `FEMALE-PORTRAIT-DIRECTOR-V1.3`
+- Version: `FEMALE-PORTRAIT-DIRECTOR-V2.0-MODULAR`
 - Project: `Female Portrait Prompt Director Skill`

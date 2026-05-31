@@ -1,6 +1,6 @@
 # 提示词安全边界
 
-本文件是安全规则的唯一权威来源。其他文件只引用本文件，不重复维护完整规则。
+本文件是公开安全摘要。完整规则以 [skill/core/safety-boundary.md](../skill/core/safety-boundary.md) 为唯一权威来源，所有 Route、Reference、Overlay 和 Tool 必须继承该文件。
 
 ## 基本要求
 

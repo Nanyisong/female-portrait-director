@@ -2,7 +2,7 @@
 
 # 女性ポートレート・プロンプトディレクター Skill
 
-女性ポートレート・プロンプトディレクター Skill は、AI 画像生成向けの構造化プロンプト生成・視覚ディレクションシステムです。V1.3 では、明示されたパラメータを固定し、年齢表現、顔立ち、体型、ポーズ、衣服、シーン、カメラ、光、フィルターを詳細化してから、一つの自然な撮影瞬間へ統合します。
+女性ポートレート・プロンプトディレクター Skill は、AI 画像生成向けの構造化プロンプト生成・視覚ディレクションシステムです。V2.0-MODULAR では、単一のスタイルレジストリから必要なルートだけを読み込み、明示されたパラメータを固定し、一つの自然な撮影瞬間へ統合します。
 
 このプロジェクトは単なるプロンプト集ではなく、拡張可能な女性ポートレート用 Skill フレームワークです。
 
@@ -17,6 +17,15 @@
 - 都会的なファッション写真
 - 古風・仙侠テイストの人物画
 - EC 向け衣服モデル画像
+- レトロ香港風ポートレート
+- フレンチリラックスポートレート
+- 新中式・東洋美学ポートレート
+- アクティブスポーツポートレート
+- 旅行・バケーションポートレート
+- スタジオレタッチポートレート
+- 東洋的な豊潤美ポートレート
+- 清冷な仙侠強化ポートレート
+- 明媚で華やかな古風強化ポートレート
 
 ## 主な機能
 
@@ -121,13 +130,21 @@ $female-portrait-director
 ├── assets/examples/
 ├── skill/
 │   ├── skill.md
+│   ├── style-registry.md
 │   ├── public_instructions.md
 │   ├── parameter_schema.md
 │   ├── usage_examples.md
+│   ├── core/
 │   ├── references/
 │   │   ├── director-expansion.md
 │   │   └── visual-libraries.md
 │   └── routes/
+│       ├── commercial/
+│       ├── curve/
+│       ├── fantasy/
+│       ├── fashion/
+│       ├── lifestyle/
+│       └── oriental/
 ├── docs/
 │   ├── style_guide.md
 │   ├── prompt_safety.md
@@ -147,5 +164,5 @@ $female-portrait-director
 ## 作者とバージョン
 
 - 作者：Li Yue（李岳）
-- バージョン：`FEMALE-PORTRAIT-DIRECTOR-V1.3`
+- バージョン：`FEMALE-PORTRAIT-DIRECTOR-V2.0-MODULAR`
 - プロジェクト：`Female Portrait Prompt Director Skill`

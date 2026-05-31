@@ -3,8 +3,16 @@
 当前公开版本：
 
 ```text
-FEMALE-PORTRAIT-DIRECTOR-V1.3
+FEMALE-PORTRAIT-DIRECTOR-V2.0-MODULAR
 ```
+
+## V2.0-MODULAR 变更摘要
+
+- 使用 `skill/style-registry.md` 作为唯一风格分流入口。
+- 将底层规则拆分到 `skill/core/`，统一参数锁定、安全边界、输出格式、冲突处理和缺失参数补全。
+- 将 Route 按 lifestyle、fashion、oriental、fantasy、commercial 和 curve 分类。
+- 将已实现 Route 从 5 条扩展到 14 条，并为后续扩展保留注册占位。
+- 保持导演式扩写：先完成视觉推导，再生成完整提示词，不做摘要式或机械填参式输出。
 
 ## V1.3 变更摘要
 
