@@ -1,5 +1,17 @@
 # Changelog
 
+## FEMALE-PORTRAIT-DIRECTOR-V1.4.1
+
+Authorized reference-image generation patch.
+
+Added and improved modules:
+
+- Added `skill/tools/reference-image-generate.md` for direct identity- or product-preserving image generation
+- Added `skill/core/reference-image-lock.md` for image roles, protected subject features, and fidelity priorities
+- Added authorized selfie + clothing, person + product, and person + product + style-reference workflows
+- Kept `image-to-prompt`, `reference-image-generate`, and `ecommerce-tryon` responsibilities separate
+- Preserved the V1.4 standard detailed output contract and safety boundaries
+
 ## FEMALE-PORTRAIT-DIRECTOR-V1.4
 
 Registry-driven modular routing release.

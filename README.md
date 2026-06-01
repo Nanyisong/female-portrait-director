@@ -2,7 +2,7 @@
 
 # Female Portrait Prompt Director Skill
 
-Female Portrait Prompt Director Skill is a structured prompt-generation and visual-direction system for AI image creation. V1.4 routes each request through a single on-demand style file, locks explicit parameters, expands visual modules, and fuses them into a coherent photographed moment.
+Female Portrait Prompt Director Skill is a structured prompt-generation and visual-direction system for AI image creation. V1.4.1 routes each request through a single on-demand style file, locks explicit parameters or authorized reference-image subjects, and produces either a coherent photographed prompt or a direct identity- or product-preserving image edit.
 
 This project is not a generic prompt collection. It is an extensible female portrait prompt Skill framework.
 
@@ -35,6 +35,7 @@ Generate complete prompts from a small set of input parameters. Preserve the use
 - Expand short parameters into a coherent photographed moment instead of mechanically repeating them.
 - Fuse the expanded modules into natural, detailed, copy-ready prompts with photography-director intent.
 - Preserve clothing-display priority for e-commerce images and explicit safety boundaries for curve-focused portraits.
+- Preserve authorized selfie identity or product core visuals for direct reference-image generation.
 
 ## Quick Start
 
@@ -155,7 +156,7 @@ Platform use: Character portrait
 
 ## Safety Boundaries
 
-This project is intended only for fictional, adult, non-explicit, and non-harmful visual prompt generation. It must not be used for sexualized minors, explicit nudity, non-consensual images, deceptive identity content, harassment, defamation, privacy violations, or other unlawful purposes. See [prompt_safety.md](docs/prompt_safety.md) and [DISCLAIMER.md](DISCLAIMER.md) for details.
+Text-only generation defaults to fictional, clearly adult subjects. Reference-image workflows may preserve the identity of the user or an authorized adult subject, and may preserve product visuals that the user has the right to use. The project must not be used for sexualized minors, explicit nudity, non-consensual images, deceptive identity content, harassment, defamation, privacy violations, or other unlawful purposes. See [prompt_safety.md](docs/prompt_safety.md) and [DISCLAIMER.md](DISCLAIMER.md) for details.
 
 ## License
 
@@ -164,5 +165,5 @@ This project is licensed under the [MIT License](LICENSE). The MIT License permi
 ## Author and Version
 
 - Author: Li Yue (李岳)
-- Version: `FEMALE-PORTRAIT-DIRECTOR-V1.4`
+- Version: `FEMALE-PORTRAIT-DIRECTOR-V1.4.1`
 - Project: `Female Portrait Prompt Director Skill`
